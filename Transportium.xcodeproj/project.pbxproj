@@ -15,6 +15,19 @@
 		089D156B1ACC6C5500EFA8D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089D15691ACC6C5500EFA8D1 /* LaunchScreen.xib */; };
 		089D15771ACC6C5500EFA8D1 /* TransportiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089D15761ACC6C5500EFA8D1 /* TransportiumTests.swift */; };
 		089D15811ACC6CCC00EFA8D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15801ACC6CCC00EFA8D1 /* CoreLocation.framework */; };
+		089D15881ACC7C2700EFA8D1 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15871ACC7C2700EFA8D1 /* GoogleMaps.framework */; };
+		089D158A1ACC7C5A00EFA8D1 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 089D15891ACC7C5A00EFA8D1 /* GoogleMaps.bundle */; };
+		089D158C1ACC7C8800EFA8D1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D158B1ACC7C8800EFA8D1 /* AVFoundation.framework */; };
+		089D158E1ACC7C9100EFA8D1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D158D1ACC7C9100EFA8D1 /* CoreData.framework */; };
+		089D15901ACC7C9D00EFA8D1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D158F1ACC7C9D00EFA8D1 /* CoreText.framework */; };
+		089D15921ACC7CA500EFA8D1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15911ACC7CA500EFA8D1 /* GLKit.framework */; };
+		089D15941ACC7CAC00EFA8D1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15931ACC7CAC00EFA8D1 /* ImageIO.framework */; };
+		089D15961ACC7CB900EFA8D1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15951ACC7CB900EFA8D1 /* libc++.dylib */; };
+		089D15981ACC7CC400EFA8D1 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15971ACC7CC400EFA8D1 /* libicucore.dylib */; };
+		089D159A1ACC7CCE00EFA8D1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15991ACC7CCE00EFA8D1 /* libz.dylib */; };
+		089D159C1ACC7CD800EFA8D1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D159B1ACC7CD800EFA8D1 /* OpenGLES.framework */; };
+		089D159E1ACC7CE200EFA8D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D159D1ACC7CE200EFA8D1 /* QuartzCore.framework */; };
+		089D15A01ACC7CEA00EFA8D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D159F1ACC7CEA00EFA8D1 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,20 @@
 		089D15751ACC6C5500EFA8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		089D15761ACC6C5500EFA8D1 /* TransportiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportiumTests.swift; sourceTree = "<group>"; };
 		089D15801ACC6CCC00EFA8D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		089D15871ACC7C2700EFA8D1 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Transportium/libs/GoogleMaps.framework; sourceTree = "<group>"; };
+		089D15891ACC7C5A00EFA8D1 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Transportium/libs/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		089D158B1ACC7C8800EFA8D1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		089D158D1ACC7C9100EFA8D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		089D158F1ACC7C9D00EFA8D1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		089D15911ACC7CA500EFA8D1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		089D15931ACC7CAC00EFA8D1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		089D15951ACC7CB900EFA8D1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		089D15971ACC7CC400EFA8D1 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		089D15991ACC7CCE00EFA8D1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		089D159B1ACC7CD800EFA8D1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		089D159D1ACC7CE200EFA8D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		089D159F1ACC7CEA00EFA8D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		089D15A11ACC7DB200EFA8D1 /* Transportium-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transportium-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089D15A01ACC7CEA00EFA8D1 /* SystemConfiguration.framework in Frameworks */,
+				089D159E1ACC7CE200EFA8D1 /* QuartzCore.framework in Frameworks */,
+				089D159C1ACC7CD800EFA8D1 /* OpenGLES.framework in Frameworks */,
+				089D159A1ACC7CCE00EFA8D1 /* libz.dylib in Frameworks */,
+				089D15981ACC7CC400EFA8D1 /* libicucore.dylib in Frameworks */,
+				089D15961ACC7CB900EFA8D1 /* libc++.dylib in Frameworks */,
+				089D15941ACC7CAC00EFA8D1 /* ImageIO.framework in Frameworks */,
+				089D15921ACC7CA500EFA8D1 /* GLKit.framework in Frameworks */,
+				089D15901ACC7C9D00EFA8D1 /* CoreText.framework in Frameworks */,
+				089D158E1ACC7C9100EFA8D1 /* CoreData.framework in Frameworks */,
+				089D158C1ACC7C8800EFA8D1 /* AVFoundation.framework in Frameworks */,
+				089D15881ACC7C2700EFA8D1 /* GoogleMaps.framework in Frameworks */,
 				089D15811ACC6CCC00EFA8D1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +103,19 @@
 		089D154F1ACC6C5400EFA8D1 = {
 			isa = PBXGroup;
 			children = (
+				089D159F1ACC7CEA00EFA8D1 /* SystemConfiguration.framework */,
+				089D159D1ACC7CE200EFA8D1 /* QuartzCore.framework */,
+				089D159B1ACC7CD800EFA8D1 /* OpenGLES.framework */,
+				089D15991ACC7CCE00EFA8D1 /* libz.dylib */,
+				089D15971ACC7CC400EFA8D1 /* libicucore.dylib */,
+				089D15951ACC7CB900EFA8D1 /* libc++.dylib */,
+				089D15931ACC7CAC00EFA8D1 /* ImageIO.framework */,
+				089D15911ACC7CA500EFA8D1 /* GLKit.framework */,
+				089D158F1ACC7C9D00EFA8D1 /* CoreText.framework */,
+				089D158D1ACC7C9100EFA8D1 /* CoreData.framework */,
+				089D158B1ACC7C8800EFA8D1 /* AVFoundation.framework */,
+				089D15891ACC7C5A00EFA8D1 /* GoogleMaps.bundle */,
+				089D15871ACC7C2700EFA8D1 /* GoogleMaps.framework */,
 				089D15801ACC6CCC00EFA8D1 /* CoreLocation.framework */,
 				089D155A1ACC6C5400EFA8D1 /* Transportium */,
 				089D15731ACC6C5500EFA8D1 /* TransportiumTests */,
@@ -90,6 +142,7 @@
 				089D15691ACC6C5500EFA8D1 /* LaunchScreen.xib */,
 				089D155F1ACC6C5400EFA8D1 /* Transportium.xcdatamodeld */,
 				089D155B1ACC6C5400EFA8D1 /* Supporting Files */,
+				089D15A11ACC7DB200EFA8D1 /* Transportium-Bridging-Header.h */,
 			);
 			path = Transportium;
 			sourceTree = "<group>";
@@ -203,6 +256,7 @@
 				089D15661ACC6C5400EFA8D1 /* Main.storyboard in Resources */,
 				089D156B1ACC6C5500EFA8D1 /* LaunchScreen.xib in Resources */,
 				089D15681ACC6C5500EFA8D1 /* Images.xcassets in Resources */,
+				089D158A1ACC7C5A00EFA8D1 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,10 +401,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/akgoel/Downloads/GoogleMaps-iOS-1.9.2",
+					"$(PROJECT_DIR)/Transportium/libs",
+				);
 				INFOPLIST_FILE = Transportium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Transportium/Transportium-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -358,10 +421,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/akgoel/Downloads/GoogleMaps-iOS-1.9.2",
+					"$(PROJECT_DIR)/Transportium/libs",
+				);
 				INFOPLIST_FILE = Transportium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Transportium/Transportium-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -418,6 +489,7 @@
 				089D157C1ACC6C5500EFA8D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		089D157D1ACC6C5500EFA8D1 /* Build configuration list for PBXNativeTarget "TransportiumTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +498,7 @@
 				089D157F1ACC6C5500EFA8D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
