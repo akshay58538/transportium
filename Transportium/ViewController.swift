@@ -10,31 +10,31 @@ import UIKit
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
-    var locationManager : CLLocationManager?
+    var locationManager : CLLocationManager = CLLocationManager()
+    var gmsMapView : GMSMapView?
+    var coordinate : CLLocationCoordinate2D?
+    var heading : CLLocationDirection?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.startStandardLocationUpdate()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func startStandardLocationUpdate() {
-        if (nil == locationManager){
-            locationManager = CLLocationManager()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.distanceFilter = 50
+        locationManager.startUpdatingLocation()
+        if(CLLocationManager.headingAvailable()){
+            locationManager.headingFilter = 5
+            locationManager.startUpdatingHeading()
         }
-        locationManager!.delegate = self
-        locationManager!.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        locationManager!.distanceFilter = 50
-        locationManager!.startUpdatingLocation()
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -43,11 +43,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         var timeFromNow : NSTimeInterval = eventDate.timeIntervalSinceNow
         if (abs(timeFromNow) < 15.0){
             NSLog("latitude %+.6f, longitude %+.6f, course %@\n", location.coordinate.latitude, location.coordinate.longitude, location.course.description);
+            self.coordinate = location.coordinate
         }
+        self.updateMapDisplay()
+    }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateHeading newHeading: CLHeading!) {
+        if (newHeading.headingAccuracy < 0){
+            return;
+        }
+        var headingNew : CLLocationDirection = newHeading.trueHeading > 0 ? newHeading.trueHeading : newHeading.magneticHeading
+        self.heading = headingNew
     }
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         NSLog("Error: %@", error)
+    }
+    
+    func updateMapDisplay() {
+        var camera : GMSCameraPosition = GMSCameraPosition(target: self.coordinate!, zoom: 18.0, bearing: 0.0, viewingAngle: 90.0)
+        self.gmsMapView = GMSMapView(frame: CGRectZero)
+        self.gmsMapView?.camera = camera
+        self.gmsMapView?.myLocationEnabled = true
+        self.view = self.gmsMapView
+        
+        var marker : GMSMarker = GMSMarker(position: self.coordinate!)
+        marker.title = "Harmony Renaissance"
+        marker.snippet = "Chennai"
+        marker.map = self.gmsMapView
     }
 
 }
