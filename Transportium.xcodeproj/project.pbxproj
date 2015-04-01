@@ -14,6 +14,7 @@
 		089D15681ACC6C5500EFA8D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089D15671ACC6C5500EFA8D1 /* Images.xcassets */; };
 		089D156B1ACC6C5500EFA8D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089D15691ACC6C5500EFA8D1 /* LaunchScreen.xib */; };
 		089D15771ACC6C5500EFA8D1 /* TransportiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089D15761ACC6C5500EFA8D1 /* TransportiumTests.swift */; };
+		089D15811ACC6CCC00EFA8D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089D15801ACC6CCC00EFA8D1 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		089D15701ACC6C5500EFA8D1 /* TransportiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		089D15751ACC6C5500EFA8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		089D15761ACC6C5500EFA8D1 /* TransportiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportiumTests.swift; sourceTree = "<group>"; };
+		089D15801ACC6CCC00EFA8D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089D15811ACC6CCC00EFA8D1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		089D154F1ACC6C5400EFA8D1 = {
 			isa = PBXGroup;
 			children = (
+				089D15801ACC6CCC00EFA8D1 /* CoreLocation.framework */,
 				089D155A1ACC6C5400EFA8D1 /* Transportium */,
 				089D15731ACC6C5500EFA8D1 /* TransportiumTests */,
 				089D15591ACC6C5400EFA8D1 /* Products */,
@@ -164,6 +168,7 @@
 				TargetAttributes = {
 					089D15571ACC6C5400EFA8D1 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = UPYV76TX32;
 					};
 					089D156F1ACC6C5500EFA8D1 = {
 						CreatedOnToolsVersion = 6.2;
@@ -342,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Transportium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Transportium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
